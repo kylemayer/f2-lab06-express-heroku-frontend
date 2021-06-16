@@ -8,7 +8,7 @@ export default class Body extends Component {
     }
 
     handleClick = async() => {
-        const data = await request.get('http://localhost:777/ducks')
+        const data = await request.get('https://duckapi.herokuapp.com/ducks')
         this.setState({ data: data.body.results })
 }
 
